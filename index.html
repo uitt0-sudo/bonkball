@@ -1,48 +1,33 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BONK Ball</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Bagsball Clone</title>
   <style>
     body {
       background-color: #000;
-      color: #FFA500;
+      color: #0f0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
+      text-align: center;
     }
 
     header {
       padding: 40px 20px 20px;
-      text-align: center;
-      position: relative;
-    }
-
-    .twitter-icon {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      font-size: 24px;
-    }
-
-    .twitter-icon a {
-      color: #FFA500;
-      text-decoration: none;
     }
 
     .title {
       font-size: 48px;
-      font-weight: 800;
+      font-weight: bold;
       margin-bottom: 10px;
-      color: #FFA500;
+      color: #00ff66;
     }
 
     .subtitle {
       font-size: 18px;
-      color: #ccc;
+      color: #bbb;
     }
 
     .highlight {
@@ -57,7 +42,7 @@
     .btn {
       padding: 10px 20px;
       margin: 5px;
-      background-color: #FFA500;
+      background-color: #00ff66;
       border: none;
       color: #000;
       font-weight: bold;
@@ -76,32 +61,31 @@
 
     .card {
       background: #111;
-      color: #FFA500;
+      color: #0f0;
       padding: 20px;
       border-radius: 12px;
       width: 280px;
-      border: 1px solid #FFA500;
+      border: 1px solid #0f0;
     }
 
     h2 {
-      color: #FFA500;
+      color: #00ff66;
       margin-top: 40px;
-      text-align: center;
     }
 
     .how-it-works {
-      background: #111;
+      background: #011;
       padding: 30px;
       margin: 30px auto;
-      border: 1px solid #FFA500;
+      border: 1px solid #0f0;
       border-radius: 12px;
       max-width: 800px;
-      color: #fff;
     }
 
     .how-it-works div {
       font-size: 18px;
       margin: 10px 0;
+      color: #fff;
     }
 
     .lottery-section {
@@ -132,16 +116,12 @@
       color: #666;
       font-size: 12px;
       padding: 20px;
-      text-align: center;
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="twitter-icon">
-      <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-    </div>
-    <div class="title">BONK Ball</div>
+    <div class="title">Bagsball</div>
     <div class="subtitle">The Powerball of Memecoins<br/>
       <span class="highlight">Hold $1M marketcap for 24 hours straight and $100,000 will be raffled!</span>
     </div>
@@ -154,7 +134,7 @@
   <div class="cards">
     <div class="card">
       <h3>$1M Marketcap</h3>
-      <p>Once BONK Ball hits $1M, the 24h countdown begins. Hold strong!</p>
+      <p>Once Bagsball hits $1M, the 24h countdown begins. Hold strong!</p>
     </div>
     <div class="card">
       <h3>Community Raffle</h3>
@@ -162,13 +142,13 @@
     </div>
     <div class="card">
       <h3>Fair & Transparent</h3>
-      <p>All rules and draws are public. BONK Ball is for the people, by the people.</p>
+      <p>All rules and draws are public. Bagsball is for the people, by the people.</p>
     </div>
   </div>
 
   <h2>How It Works</h2>
   <div class="how-it-works">
-    <div><strong>1</strong> - Hold BONK Ball Tokens<br/>Every 10,000 tokens = 1 entry</div>
+    <div><strong>1</strong> - Hold Bagsball Tokens<br/>Every 10,000 tokens = 1 entry</div>
     <div><strong>2</strong> - More Entries = Better Odds</div>
     <div><strong>3</strong> - Draws Every Hour (automatic)</div>
   </div>
@@ -182,7 +162,7 @@
     </div>
     <div class="lottery-card">
       <h4>Hourly Jackpot</h4>
-      <p style="font-weight:bold; font-size:20px;">$456.00 USD</p>
+      <p class="highlight">$456.00 USD</p>
       <p>2.76 SOL</p>
     </div>
     <div class="lottery-card">
@@ -193,7 +173,7 @@
     </div>
   </div>
 
-  <div class="footer">This is a visual clone of BONK Ball for personal/educational use.</div>
+  <div class="footer">This is a demo replica. No real functionality.</div>
 
   <script>
     const countdownDate = new Date("2025-07-30T07:44:36Z").getTime();
@@ -221,4 +201,4 @@
     updateCountdown();
   </script>
 </body>
-</html> 
+</html>
