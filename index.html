@@ -3,18 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>JUP BALL</title>
+  <title>BONK Ball</title>
+  <!-- Google Font Playball -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playball&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    :root {
-      --jupiter-green: #B5FF3E;
-      --jupiter-blue: #00E5FF;
-      --jupiter-text: #33ffcc;
-    }
     body {
       background-color: #000;
-      color: var(--jupiter-green);
+      color: #FFA500;
       font-family: Arial, sans-serif;
       margin: 0; padding: 0;
     }
@@ -28,11 +24,11 @@
       top: 20px; left: 20px;
       font-size: 28px;
     }
-    .twitter-icon a { color: var(--jupiter-green); }
+    .twitter-icon a { color: #FFA500; }
     .title {
       font-family: 'Playball', cursive;
-      font-size: 64px;
-      color: var(--jupiter-green);
+      font-size: 64px; /* bigger for bold and spacing */
+      color: #FFA500;
       margin: 0;
     }
     .subtitle {
@@ -42,7 +38,7 @@
       line-height: 1.4;
     }
     .highlight {
-      color: var(--jupiter-blue);
+      color: #fff;
       font-weight: 600;
     }
     .btn-group {
@@ -52,7 +48,7 @@
     }
     .btn {
       padding: 12px 30px;
-      background: linear-gradient(90deg, var(--jupiter-green), var(--jupiter-blue));
+      background-color: #FFA500;
       border: none;
       color: #000;
       font-weight: 600;
@@ -70,8 +66,8 @@
     }
     .card {
       background: #111;
-      color: var(--jupiter-green);
-      border: 1px solid var(--jupiter-green);
+      color: #FFA500;
+      border: 1px solid #FFA500;
       border-radius: 14px;
       width: 300px;
       padding: 25px;
@@ -83,7 +79,7 @@
     }
     .how-it-works {
       background: #111;
-      border: 1px solid var(--jupiter-blue);
+      border: 1px solid #FFA500;
       border-radius: 14px;
       max-width: 840px;
       margin: 40px auto;
@@ -99,9 +95,8 @@
     }
     h2 {
       margin-top: 60px;
-      color: var(--jupiter-blue);
+      color: #FFA500;
       font-size: 28px;
-      text-align: center;
     }
     .lottery-section {
       display: flex;
@@ -140,7 +135,7 @@
     <div class="twitter-icon">
       <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
     </div>
-    <div class="title">JUP BALL</div>
+    <div class="title">BONK Ball</div>
     <div class="subtitle">
       The Powerball of Memecoins<br>
       <span class="highlight">
@@ -156,7 +151,7 @@
   <div class="cards">
     <div class="card">
       <h3>$1M Marketcap</h3>
-      <p>Once JUP BALL hits $1M, the 24h countdown begins. Hold strong!</p>
+      <p>Once BONK Ball hits $1M, the 24h countdown begins. Hold strong!</p>
     </div>
     <div class="card">
       <h3>Community Raffle</h3>
@@ -164,13 +159,13 @@
     </div>
     <div class="card">
       <h3>Fair &amp; Transparent</h3>
-      <p>All rules and draws are public. JUPITER is for the people.</p>
+      <p>All rules and draws are public. BONK Ball is for the people.</p>
     </div>
   </div>
 
   <h2>How It Works</h2>
   <div class="how-it-works">
-    <div><strong>1</strong> – Hold JUPITER Tokens<br>Every 10,000 tokens = 1 entry</div>
+    <div><strong>1</strong> – Hold BONK Ball Tokens<br>Every 10,000 tokens = 1 entry</div>
     <div><strong>2</strong> – More Entries = Better Odds</div>
     <div><strong>3</strong> – Draws Every Hour (automatic via VRF)</div>
   </div>
@@ -195,7 +190,7 @@
     </div>
   </div>
 
-  <div class="footer">Visual clone for JUP BALL. No backend logic.</div>
+  <div class="footer">Visual clone for BONK Ball. No backend logic.</div>
 
   <script>
     const countdownDate = new Date(Date.now() + 3600000).getTime();
