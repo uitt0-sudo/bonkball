@@ -190,7 +190,7 @@
     </div>
   </div>
 
-  <div class="footer">.</div>
+  <div class="footer">Visual clone for BONK Ball. No backend logic.</div>
 
   <script>
     const countdownDate = new Date(Date.now() + 3600000).getTime();
@@ -200,7 +200,7 @@
       const h = String(Math.floor(d / 3600000)).padStart(2,'0');
       const m = String(Math.floor((d % 3600000)/60000)).padStart(2,'0');
       const s = String(Math.floor((d % 60000)/1000)).padStart(2,'0');
-      document.getElementById("countdown").innerText = ${h} : ${m} : ${s};
+      document.getElementById("countdown").innerText = `${h} : ${m} : ${s}`;
     }
     setInterval(updateCountdown, 1000);
     updateCountdown();
