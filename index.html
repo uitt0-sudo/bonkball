@@ -1,204 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bagsball Clone</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bag Index Fund</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #000;
-      color: #0f0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #004d00, #009900);
+      color: white;
       text-align: center;
     }
 
     header {
-      padding: 40px 20px 20px;
+      background-color: #003300;
+      padding: 1em 2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    .title {
-      font-size: 48px;
-      font-weight: bold;
-      margin-bottom: 10px;
-      color: #00ff66;
+    header h1 {
+      font-size: 1.2em;
+      font-weight: 900;
     }
 
-    .subtitle {
-      font-size: 18px;
-      color: #bbb;
-    }
-
-    .highlight {
-      color: #fff;
-      font-weight: bold;
-    }
-
-    .btn-group {
-      margin: 20px 0;
+    nav a {
+      color: white;
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: 600;
     }
 
     .btn {
-      padding: 10px 20px;
-      margin: 5px;
-      background-color: #00ff66;
+      background: #ff1a1a;
+      color: white;
+      padding: 0.7em 1.2em;
       border: none;
-      color: #000;
-      font-weight: bold;
+      border-radius: 8px;
       cursor: pointer;
-      border-radius: 6px;
-    }
-
-    .cards {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin: 30px auto;
-      max-width: 1000px;
-    }
-
-    .card {
-      background: #111;
-      color: #0f0;
-      padding: 20px;
-      border-radius: 12px;
-      width: 280px;
-      border: 1px solid #0f0;
-    }
-
-    h2 {
-      color: #00ff66;
-      margin-top: 40px;
-    }
-
-    .how-it-works {
-      background: #011;
-      padding: 30px;
-      margin: 30px auto;
-      border: 1px solid #0f0;
-      border-radius: 12px;
-      max-width: 800px;
-    }
-
-    .how-it-works div {
-      font-size: 18px;
-      margin: 10px 0;
-      color: #fff;
-    }
-
-    .lottery-section {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 40px;
-      padding-bottom: 60px;
-    }
-
-    .lottery-card {
-      background: #fff;
-      color: #000;
-      padding: 20px;
-      border-radius: 12px;
-      width: 280px;
-      text-align: center;
-    }
-
-    .timer {
-      font-size: 24px;
       font-weight: bold;
-      margin-top: 10px;
     }
 
-    .footer {
-      color: #666;
-      font-size: 12px;
-      padding: 20px;
+    .main {
+      padding: 4em 1em;
+    }
+
+    .token-box {
+      display: inline-block;
+      background: rgba(0, 0, 0, 0.2);
+      padding: 1em 2em;
+      border-radius: 10px;
+      font-weight: bold;
+      margin-bottom: 1.5em;
+    }
+
+    .main h1 {
+      font-size: 2.5em;
+      font-weight: 900;
+    }
+
+    .highlight {
+      color: #ff9999;
+    }
+
+    .logos img {
+      height: 40px;
+      margin: 0.5em;
+    }
+
+    .buttons {
+      margin-top: 2em;
+    }
+
+    .buttons .btn-secondary {
+      background: transparent;
+      border: 1px solid white;
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="title">Bagsball</div>
-    <div class="subtitle">The Powerball of Memecoins<br/>
-      <span class="highlight">Hold $1M marketcap for 24 hours straight and $100,000 will be raffled!</span>
-    </div>
-    <div class="btn-group">
-      <button class="btn">Join the Raffle</button>
-      <button class="btn">Vote on Raffle Method</button>
-    </div>
+    <h1>BIF <span style="font-weight: 400;">Bag Index Fund</span></h1>
+    <nav>
+      <a href="#">How It Works</a>
+      <a href="#">SPYx Info</a>
+      <button class="btn">Get Started</button>
+    </nav>
   </header>
 
-  <div class="cards">
-    <div class="card">
-      <h3>$1M Marketcap</h3>
-      <p>Once Bagsball hits $1M, the 24h countdown begins. Hold strong!</p>
+  <div class="main">
+    <div class="token-box">
+      <img src="5b2fb40d-cb96-4ab3-898f-c76aabe764d3.png" alt="$BIF Token" height="30">
+      <div>$BIF Token<br><small>Powered by SPYx</small></div>
     </div>
-    <div class="card">
-      <h3>Community Raffle</h3>
-      <p>$100,000 will be raffled to holders. The community votes on how the raffle works!</p>
-    </div>
-    <div class="card">
-      <h3>Fair & Transparent</h3>
-      <p>All rules and draws are public. Bagsball is for the people, by the people.</p>
-    </div>
-  </div>
 
-  <h2>How It Works</h2>
-  <div class="how-it-works">
-    <div><strong>1</strong> - Hold Bagsball Tokens<br/>Every 10,000 tokens = 1 entry</div>
-    <div><strong>2</strong> - More Entries = Better Odds</div>
-    <div><strong>3</strong> - Draws Every Hour (automatic)</div>
-  </div>
+    <h1>Earn Real Stocks<br><span class="highlight">Just</span> by Holding<br>$BIF</h1>
 
-  <h2>Hourly Lottery</h2>
-  <div class="lottery-section">
-    <div class="lottery-card">
-      <h4>Next Drawing In</h4>
-      <div id="countdown" class="timer">Loading...</div>
-      <p>Results announced shortly after</p>
+    <p>Automatically receive <strong>SPYx tokens</strong> every 5 minutes</p>
+    <p>Get instant exposure to 500+ S&amp;P 500 companies including:</p>
+
+    <div class="logos">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Windows_logo_-_2021.svg" alt="Microsoft">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Nvidia_logo.svg/512px-Nvidia_logo.svg.png" alt="Nvidia">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Tesla_Motors.svg" alt="Tesla">
+      <span>+494 more</span>
     </div>
-    <div class="lottery-card">
-      <h4>Hourly Jackpot</h4>
-      <p class="highlight">$456.00 USD</p>
-      <p>2.76 SOL</p>
-    </div>
-    <div class="lottery-card">
-      <h4>Last 3 Winners</h4>
-      <p>Verified with blockchain</p>
-      <p>Waiting for Draw...</p>
-      <div class="timer">01 : 08 : 21</div>
+
+    <div class="buttons">
+      <button class="btn">Start Earning SPYx Now</button>
+      <button class="btn btn-secondary">Learn About SPYx</button>
     </div>
   </div>
-
-  <div class="footer">This is a demo replica. No real functionality.</div>
-
-  <script>
-    const countdownDate = new Date("2025-07-30T07:44:36Z").getTime();
-
-    function updateCountdown() {
-      const now = new Date().getTime();
-      const distance = countdownDate - now;
-
-      if (distance < 0) {
-        document.getElementById("countdown").innerText = "00 : 00 : 00";
-        return;
-      }
-
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      document.getElementById("countdown").innerText =
-        String(hours).padStart(2, '0') + " : " +
-        String(minutes).padStart(2, '0') + " : " +
-        String(seconds).padStart(2, '0');
-    }
-
-    setInterval(updateCountdown, 1000);
-    updateCountdown();
-  </script>
 </body>
 </html>
